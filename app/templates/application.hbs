@@ -1,0 +1,22 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Twitember</a>
+      <ul class="nav navbar-nav">
+        {{#link-li}}
+          {{#link-to 'tweets'}}Tweets{{/link-to}}
+        {{/link-li}}
+        {{#link-li}}
+          {{#link-to 'settings'}}Settings{{/link-to}}
+        {{/link-li}}
+      </ul>
+    </div>
+    <div class="collapse navbar-collapse">
+        <p class="navbar-text navbar-right">Search: {{model.hashtag}}</p>
+    </div>
+  </div>
+</nav>
+<div class="content">
+{{outlet}}
+</div>
+

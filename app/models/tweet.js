@@ -1,0 +1,11 @@
+import DS from 'ember-data';
+
+var attr = DS.attr;
+
+export default DS.Model.extend({
+    author: attr('string'),
+    avatar: attr('string'),
+    body: attr('string'),
+    date: attr('date'),
+    screenname: attr('string')
+});

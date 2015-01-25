@@ -1,0 +1,18 @@
+{{outlet}}
+{{#unless isEditing}}
+<div id="main-content" class="container-fluid">
+  <div class="row">
+    <div class="settings">
+      <div class="row">
+        <label class="label">hashtag:</label>
+        <div class="settings-field">{{model.hashtag}}</div>
+      </div>
+      <div class="row">
+        <span class="label">
+          <button id="settings-edit" class="btn btn-default" {{action "edit"}}>Edit</button>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+{{/unless}}

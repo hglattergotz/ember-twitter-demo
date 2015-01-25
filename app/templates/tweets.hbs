@@ -1,0 +1,17 @@
+<div id="main-content" class="container-fluid">
+  <div class="row">
+  {{#each tweet in arrangedContent}}
+    <div class="tweet">
+      <div class="tweet-content">
+        <img class="tweet-avatar" {{bind-attr src=tweet.avatar}} alt="Avatar">
+        <strong class="tweet-full-name">{{tweet.author}}</strong>
+        <span>&rlm;</span>
+        <span class="tweet-username">@{{tweet.screenname}}</span>
+        <span>&rlm;</span>
+        <small class="tweet-time">{{date-ago tweet.date}}</small>
+        <p class="tweet-text">{{tweet.body}}</p>
+      </div>
+    </div>
+  {{/each}}
+  </div>
+</div>

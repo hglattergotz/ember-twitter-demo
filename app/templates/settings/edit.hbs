@@ -1,0 +1,16 @@
+<div id="main-content" class="container-fluid">
+  <div class="row">
+    <div class="settings">
+      <div class="row">
+        <label class="label">hashtag:</label>
+        <div class="settings-field">{{input type="text" value=model.hashtag size="25"}}</div>
+      </div>
+      <div class="row">
+        <span class="label">
+          <button class="btn btn-default" {{action "editCancel"}}>Cancel</button>
+          <button class="btn btn-primary" {{action "editSave"}}>Save</button>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
