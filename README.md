@@ -21,4 +21,9 @@ It uses
 * ```$ ember serve --proxy http://127.0.0.1:8001```
 
 Please note the proxy flag in the last command, this expects your node backed to be
-listening on port 8001. See [hglattergotz/node-twitter-example](https://github.com/hglattergotz/node-twitter-example) for details.
+listening on port 8001. See below for details.
+
+## Backend
+
+The [hglattergotz/node-twitter-example](https://github.com/hglattergotz/node-twitter-example)
+application can be used as the backed for this example.
