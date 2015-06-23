@@ -3,9 +3,12 @@
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp({
-    'ember-cli-bootswatch': {
-        theme: 'cerulean'
-    }
+  'ember-cli-bootswatch': {
+    theme: 'cerulean'
+  },
+  'sassOptions': {
+    'ext': 'sass'
+  }
 });
 
 // Use `app.import` to add additional libraries to the generated
@@ -21,6 +24,6 @@ var app = new EmberApp({
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
-app.import('bower_components/momentjs/moment.js');
+app.import('bower_components/moment/moment.js');
 
 module.exports = app.toTree();

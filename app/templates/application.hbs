@@ -3,12 +3,12 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="/">Twitember</a>
       <ul class="nav navbar-nav">
-        {{#link-li}}
+        {{#active-link}}
           {{#link-to 'tweets'}}Tweets{{/link-to}}
-        {{/link-li}}
-        {{#link-li}}
+        {{/active-link}}
+        {{#active-link}}
           {{#link-to 'settings'}}Settings{{/link-to}}
-        {{/link-li}}
+        {{/active-link}}
       </ul>
     </div>
     <div class="collapse navbar-collapse">

@@ -1,6 +1,6 @@
 <div id="main-content" class="container-fluid">
   <div class="row">
-  {{#each tweet in arrangedContent}}
+  {{#each sortedTweets as |tweet|}}
     <div class="tweet">
       <div class="tweet-content">
         <img class="tweet-avatar" {{bind-attr src=tweet.avatar}} alt="Avatar">
