@@ -17,7 +17,8 @@ It uses
 * ```$ npm install -g ember-cli```
 * ```$ npm install -g bower```
 * ```$ git clone git@github.com:hglattergotz/ember-twitter-demo.git```
-* ```$ ember install```
+* ```$ npm install```
+* ```$ bower install```
 * ```$ ember serve --proxy http://127.0.0.1:8001```
 
 Please note the proxy flag in the last command, this expects your node backed to be
